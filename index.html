@@ -33,29 +33,31 @@
     </div>
   </section>
 
-  <!-- Welcome section -->
-  <div class="cover" id="intro">
-    <div class="container-welcome">
-      <div class="cover__text">
-        <h1>Titolo della mia cover</h1>
-        <p>Sottotitolo della cover</p>
+  <div class="contenuto-pagina">
+    <!-- Welcome section -->
+    <div class="cover" id="intro">
+      <div class="container-welcome">
+        <div class="cover__text">
+          <h1>Titolo della mia cover</h1>
+          <p>Sottotitolo della cover</p>
+        </div>
+        <button class="btn-primary" type="button">Button</button>
       </div>
+      <video autoplay muted loop id="video-back">
+        <source src="videos/production ID_3850868.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <!-- Form section -->
+    <section class="trova-la-tua-città" id="one">
+      <div class="item">
+        <label for="city">Inserisci la tua città</label><br /><br />
+        <input type="text" id="city" name="city" placeholder="Inserisci la tua citta (In inglese)" />
+        <br />
+        <button class="button-is-info">cerca</button>
+      </div>
+    </section>
 
-      <button class="btn-primary" type="button">Button</button>
-    </div>
-    <video autoplay muted loop id="video-back">
-      <source src="videos/production ID_3850868.mp4" type="video/mp4" />
-    </video>
   </div>
-  <!-- Form section -->
-  <section class="trova-la-tua-città" id="one">
-    <div class="item">
-      <label for="city">Inserisci la tua città</label><br /><br />
-      <input type="text" id="city" name="city" placeholder="Inserisci la tua citta (In inglese)" />
-      <br />
-      <button class="button-is-info">cerca</button>
-    </div>
-  </section>
 
   <script src="script.js"></script>
 </body>
