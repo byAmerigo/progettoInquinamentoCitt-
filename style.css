@@ -167,6 +167,9 @@ p {
     background-image: none;
     background-color: #b74e91;
   }
+  .immagine {
+    display: none;
+  }
 }
 @media screen and (max-width: 736px) {
   #sidebar {
