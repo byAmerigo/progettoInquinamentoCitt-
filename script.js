@@ -30,6 +30,22 @@ function callAPIbyLatLong(latitudine, longitudine) {
 }
 
 
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => handlePosition(position),
+      (errori) => alert(errori.message),
+     );
+  } 
+}
+
+function handlePosition(position) {
+ console.log('%c position ', 'background: #AB2346; color: white ;font-size:30px;')
+ let latitude = position.coords.latitude
+ let longitude = position.coords.longitude
+ console.log('%c latitude, longitude ', 'background: #AB2346; color: white ;font-size:30px;')
+ console.table(latitude, longitude)
+}
 /**
  * Questa funzione viene fatta partire quando si preme
  * sul bottone del form "Inserisci la tua città"
